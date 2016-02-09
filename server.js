@@ -3,8 +3,6 @@ var path = require('path');
 var webpack = require('webpack');
 var app = express();
 
-var static_path = path.join(__dirname, './');
-
 app.use(express.static(__dirname))
   .get('/', function (req, res) {
     res.sendFile('index.html', {
