@@ -4,7 +4,8 @@
   "description": "calculator",
   "main": "index.js",
   "scripts": {
-    "start": "node ./server.js"
+    "start": "node ./server.js",
+    "postinstall": "webpack --config ./webpack.config.js --progress --colors",
   },
   "author": "",
   "license": "ISC",
